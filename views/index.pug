@@ -1,0 +1,19 @@
+// - var title = ''
+
+html
+    head
+        style
+            include ../public/stylesheet/styles.css
+    body
+        form(action="/addCar" method="post" name="registerForm")
+            input(type="text" name="name")
+            input(type="text" name="model")
+            input(type="text" name="url")
+            button(type="submit" class="btn") Add to list!
+            #name
+            #model
+            #url
+            script(src='./javascripts/main.js')
+
+//p Welcome to #{title}
+   // h1= title
